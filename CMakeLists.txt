@@ -18,7 +18,7 @@ FetchContent_MakeAvailable(json)
 add_executable(30_4_3 main.cpp
         cpr_requests.cpp
         cpr_requests.h
-        cpr_requests.h)
+        constants.h)
 
 target_link_libraries(30_4_3 PRIVATE cpr::cpr)
 target_link_libraries(30_4_3 PRIVATE nlohmann_json::nlohmann_json)
