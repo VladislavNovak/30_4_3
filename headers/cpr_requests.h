@@ -3,8 +3,8 @@
 
 #include <iostream>
 #include <map>
-#include <cpr/cpr.h>
-#include <nlohmann/json.hpp>
+#include "cpr/cpr.h"
+#include "nlohmann/json.hpp"
 #include "constants.h"
 
 using std::cout;

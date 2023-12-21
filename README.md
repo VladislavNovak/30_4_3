@@ -60,9 +60,18 @@ for (it = arguments.begin(); it != arguments.end(); it++) {
 </details>
 
 <details open>
-<summary><span style="color:tomato;font-size:12px">INFO</span></summary>
+<summary><span style="color:tomato;font-size:12px">Комментарий к программе</span></summary>
 
-[//]: # (<a href="" style="margin-left:16px">REF</a>)
+Данные пользователя вводятся в цикле.
+
+Данные помещаются в payload. По сути, это std::map. 
+
+Если в ключе или значении введено одно из ключевых слов (get, post, exit), заполнение payload прекращается. 
+И если ключевым словом является get или post, то совершается асинхронный запрос с payload на httpbin.org.
+
+Результатом будет распечатка данных 
+- `json jDoc(json::parse(r.text)).at("args")` для get-запроса
+- `json jDoc(json::parse(r.text)).at("json")` для post-запроса
 
 </details>
 </details>
