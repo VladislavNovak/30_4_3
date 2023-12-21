@@ -11,6 +11,6 @@ const string ROOT = R"(https://httpbin.org)";
 
 enum class RequestType { GET, POST };
 
-const vector<string> requestTypeTitles{"get", "post", "exit"};
+const vector<string> menuTitle{"get", "post", "exit"};
 
 #endif //INC_30_4_3_CONSTANTS_H
